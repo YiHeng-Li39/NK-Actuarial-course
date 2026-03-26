@@ -339,38 +339,10 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 核心精算符号与公式渲染测试
+        2. 课后作业
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. 核心精算符号与公式渲染测试">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pure-endowment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        纯生存期末禀赋 (Pure Endowment)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#net-single-premium" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        终身寿险趸交纯保费 (Net Single Premium)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -378,7 +350,18 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 代码高亮测试
+        3. 参考答案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 声明
       
     </span>
   </a>
@@ -548,38 +531,10 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 核心精算符号与公式渲染测试
+        2. 课后作业
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. 核心精算符号与公式渲染测试">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pure-endowment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        纯生存期末禀赋 (Pure Endowment)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#net-single-premium" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        终身寿险趸交纯保费 (Net Single Premium)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -587,7 +542,18 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 代码高亮测试
+        3. 参考答案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 声明
       
     </span>
   </a>
@@ -612,33 +578,15 @@
 
 
 <h1 id="_1">精算概论学习资料</h1>
-<p>欢迎来到本课程的资料库！这里将系统存放课后作业、答案、课程讲义、核心公式推导与模型代码。</p>
+<p>欢迎来到本课程的资料库！这里将系统存放课后作业、答案、课程讲义、核心公式推导。大家的共同疑问我也会在这里进行解答。</p>
 <h2 id="1">1. 助教寄语</h2>
 <p>同学们，我深知大家对于高GPA、高绩点的渴望，但请相信只要你交了作业，助教就会给你们满分的平时成绩，重要的不是你交上来了一份完美的作业，而是你真的学会了精算概论这门课，通过平时作业体现你的思考，期末考试不至于拿到题目连公式都记不起来。希望大家不要舍本逐末！</p>
-<h2 id="2">2. 核心精算符号与公式渲染测试</h2>
-<p>以下是几个精算学中基础的现值与概率计算公式。</p>
-<h3 id="pure-endowment">纯生存期末禀赋 (Pure Endowment)</h3>
-<p>对于一个年龄为 <span class="arithmatex">\(x\)</span> 岁的人，如果他在 <span class="arithmatex">\(n\)</span> 年后依然存活，将获得 1 单位的生存金。其精算现值表示为：</p>
-<div class="arithmatex">\[
-{}_{n}E_x = v^n \cdot {}_{n}p_x = \frac{D_{x+n}}{D_x}
-\]</div>
-<h3 id="net-single-premium">终身寿险趸交纯保费 (Net Single Premium)</h3>
-<p>假设死亡保险金于死亡所在保单年度末给付，对于 <span class="arithmatex">\(x\)</span> 岁的人，保额为 1 的终身寿险趸交纯保费为：</p>
-<div class="arithmatex">\[
-A_x = \sum_{k=0}^{\infty} v^{k+1} \cdot {}_{k|}q_x = \frac{M_x}{D_x}
-\]</div>
-<h2 id="3">3. 代码高亮测试</h2>
-<p>除了公式，我们还可以直接在这里展示精算建模（例如 GLM 或基础保费测算）的代码：</p>
-<p>```python
-def calc_pure_endowment(interest_rate, n, p_x):
-    """
-    计算纯生存期末禀赋
-    :param interest_rate: 预定利率 (如 0.035)
-    :param n: 期限
-    :param p_x: n年生存概率
-    """
-    v = 1 / (1 + interest_rate)
-    return (v ** n) * p_x</p>
+<h2 id="2">2. 课后作业</h2>
+<p>课后作业会在章节授课完成后发布。课后作业的上交时间为：作业发布后一周（法定节假日除外考虑）。上交方式为：纸质版。</p>
+<h2 id="3">3. 参考答案</h2>
+<p>大家上交作业以后我会尽快发布作业答案，有问题欢迎私信。</p>
+<h2 id="4">4. 声明</h2>
+<p>网站内容仅供南开大学精算学专业教学使用，未经许可请勿转载。</p>
 
 
 
