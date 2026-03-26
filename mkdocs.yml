@@ -1,0 +1,17 @@
+site_name: 精算概论学习资料
+site_description: 南开精算课程助教笔记与资料库
+
+theme:
+  name: material
+  features:
+    - navigation.tabs # 开启顶部导航栏
+    - navigation.sections # 侧边栏层级折叠
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
